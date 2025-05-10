@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | PT Selamat Sempurna Tbk</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- unicons Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../CSS/Styles.css" />
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/register.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="index.html#home"><img src="../img/logo.jpg" alt="logo" /></a>
+      </div>
+
+      <div class="navbar-nav">
+        <a href="../Index.html">Home</a>
+        <a href="../Index.html#about">Tentang Kami</a>
+        <a href="../Index.html#produk">Produk</a>
+        <a href="../Index.html#products">Produk Unggulan</a>
+        <a href="../Index.html#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="Login.html" id="user-button"><i data-feather="user"></i></a>
+        <a href="#" id="toggle-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Login -->
+    <div class="container">
+      <div class="forms">
+        <div class="form register">
+          <span class="title">Register</span>
+          <form id="registerForm">
+            <div class="input-field">
+              <input
+                type="text"
+                id="email"
+                placeholder="Masukan Email Anda"
+                required
+              />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="text"
+                id="name"
+                placeholder="Masukan Nama Anda"
+                required
+              />
+              <i class="uil uil-user icon"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                id="password"
+                class="password"
+                placeholder="Masukan Password Anda"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                id="confirm_password"
+                class="confirm_password"
+                placeholder="Confirm Password Anda"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+            <div class="input-field button">
+              <input type="submit" value="Register" />
+            </div>
+            <div class="login_signup">
+              Sudah Punya Akun ? <a href="Login.html" id="signup">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="../js/register.js"></script>
+  </body>
+</html>
